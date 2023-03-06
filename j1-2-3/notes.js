@@ -1,18 +1,10 @@
-const st = {
-  name: "Antoine",
-  family: {
-    mother: "Yvette",
-    father: "Michel",
-    sister: "Sylvie",
-  },
-  age: 49,
+const state = {
+  name: "",
+  email: "alan@alan.fr",
 };
 
-// const {
-//   name,
-//   family: { sister },
-// } = st;
+// définition d'une clé dynamique
+let name = "toto";
+const newState = { ...state, [name]: "bernard@bernard.fr" };
 
-const sister = st.family.sister;
-
-console.log(sister);
+console.log(newState);
