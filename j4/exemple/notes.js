@@ -39,20 +39,37 @@
 // wait();
 // console.log("hello 3");
 
-const wait = () =>
-  new Promise((resolve, reject) =>
-    setTimeout(() => {
-      console.log("***on a bien attendu 2sec");
-      resolve();
-    }, 2000)
-  );
+// const wait = () =>
+//   new Promise((resolve, reject) =>
+//     setTimeout(() => {
+//       console.log("***on a bien attendu 2sec");
+//       resolve();
+//     }, 2000)
+//   );
 
-async function exec() {
-  console.log("hello 0");
-  await wait();
-  console.log("hello 2");
-  await wait();
-  console.log("hello 3");
-}
+// async function exec() {
+//   console.log("hello 1");
+//   await wait();
+//   console.log("hello 2");
+//   await wait();
+//   console.log("hello 3");
+// }
 
-exec();
+// exec();
+
+// const fetch = require("node-fetch");
+
+// import fetch from "node-fetch";
+// import fs from "fs";
+
+// console.log(fetch);
+
+// console.log(fs);
+
+//------------------------
+
+fs.writeFile("./monfichier.txt", "contenu du fichier", (err) => {
+  console.log("une fois fini, on est là");
+});
+
+await fs.writeFile("./monfichier.txt", "contenu du fichier");
