@@ -61,13 +61,17 @@ const mot = tabLettres.reduce((acc, e) => {
 const names = ["sofiane", "jules", "toto"];
 
 const countLettersName = names.reduce((acc, e) => {
-  console.log("acc", acc);
-  console.log("e", e);
-  console.log("res", { ...acc, [e]: e.length });
-  console.log("----------------");
+  // console.log("acc", acc);
+  // console.log("e", e);
+  // console.log("res", { ...acc, [e]: e.length });
+  // console.log("----------------");
   return { ...acc, [e]: e.length };
 }, {});
 
 // console.log(countLettersName);
 
 //--------------------------
+
+const tabExo = [9, 3, 4];
+
+// retourner somme de chaque élément multiplié par 2.
