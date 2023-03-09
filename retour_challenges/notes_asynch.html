@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function synchro() {
+        console.log("hello 1");
+        fetch("https://jsonplaceholder.typicode.com/users").then((res) =>
+          console.log("(milieu) hello 3")
+        );
+        console.log("hello 2");
+      }
+
+      async function asynchro() {
+        console.log("hello 1");
+        const call = await fetch("https://jsonplaceholder.typicode.com/users");
+        const resp = await call.json();
+        console.log("hello 2");
+        return resp;
+      }
+
+      // const result = asynchro();
+      // console.log("resultat", result);
+
+      asynchro().then((result) => console.log("en dehors", result));
+    </script>
+  </body>
+</html>
