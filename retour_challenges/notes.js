@@ -81,3 +81,11 @@ const tabExo = [9, 3, 4];
 // 2 méthodes:
 // * 1 reduce
 // * 1 map + 1 reduce
+
+// const resultatReduce = tabExo.reduce((acc, e) => acc + e * 2 , 0);
+
+const resultatMapReduce = tabExo
+  .map((e) => e * 2)
+  .reduce((acc, e) => acc + e, 0);
+
+console.log(resultatMapReduce);
