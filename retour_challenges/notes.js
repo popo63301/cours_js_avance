@@ -75,3 +75,7 @@ const countLettersName = names.reduce((acc, e) => {
 const tabExo = [9, 3, 4];
 
 // retourner somme de chaque élément multiplié par 2.
+
+// 2 méthodes:
+// * 1 reduce
+// * 1 map + 1 reduce
