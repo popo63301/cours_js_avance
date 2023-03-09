@@ -77,7 +77,7 @@ const fullStackNames = populations
 
 const jobLess = populations.filter((e) => !e.jobs).map((e) => e.name);
 
-console.log("jobLess", jobLess);
+// console.log("jobLess", jobLess);
 
 // lara
 // l = 1, a = 2, r = 1
@@ -104,15 +104,29 @@ console.log("jobLess", jobLess);
 - filtrer les sans mot de passe
 - compter les occurrences
 
+pseudo-code
 
 countOccurences(password) {
+    - découper password en liste de lettre ["x", "y", "u", "u" ...]
+    - initialiser objet vide, result = {}
+    - pour chaque lettre
+        - si lettre est dans result, rajouter +1 // si clé est contenu dans objet
+        - sinon, ajouter la clé avec 1
+    - retourner résultat
+}
+*/
 
-    - // faire un plan
+function countOccurences(password) {
+  const letters = password.split("");
+  let result = letters.reduce((acc, e) => {
+    if (acc.hasOwnProperty(e)) {
+      return { ...acc, [e]: acc[e] + 1 };
+    } else {
+      return { ...acc, [e]: 1 };
+    }
+  }, {});
 
-
-
-
+  return result;
 }
 
-
-*/
+console.log("ici", countOccurences("xyuuuoi00"));
