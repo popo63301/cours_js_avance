@@ -2,6 +2,7 @@
 
 Implémenter ces fonctions en JS.
 Il faut que les appels de fonctions en exemple puissent fonctionner.
+Privilégier les fonctions map et reduce.
 
 all = vérifie si tout les éléments respectent la condition passée en argument
 `all([2,4,6], (e) => e % 2 === 0) -> true`
