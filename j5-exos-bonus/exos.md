@@ -14,6 +14,7 @@ Privilégier les fonctions map et reduce.
 
 1. all = vérifie si tout les éléments respectent la condition passée en argument
    `all([2,4,6], (e) => e % 2 === 0) -> true`
+
    `all([2,3,4], (e) => e % 2 === 0) -> false`
 
 2. withIndex = ajoute l'index au côté de chaque élément
