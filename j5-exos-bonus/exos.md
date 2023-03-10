@@ -1,5 +1,8 @@
 # Bonus
 
+Implémenter ces fonctions en JS.
+Il faut que les appels de fonctions en exemple puissent fonctionner.
+
 all = vérifie si tout les éléments respectent la condition passée en argument
 `all([2,4,6], (e) => e % 2 === 0) -> true`
 `all([2,3,4], (e) => e % 2 === 0) -> false`
