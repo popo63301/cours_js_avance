@@ -51,8 +51,8 @@ const chunkEvery = (arr, size) =>
   );
 
 console.log(chunkEvery([1, 2, 3, 4, 5, 6], 2)); // [[1, 2], [3, 4], [5, 6]]
-console.log(chunkEvery([1, 2, 3, 4, 5, 6, 7], 2)); // [[1, 2], [3, 4], [5, 6]]
-console.log(chunkEvery([1], 2)); // [[1, 2], [3, 4], [5, 6]]
+console.log(chunkEvery([1, 2, 3, 4, 5, 6, 7], 2)); // [[1, 2], [3, 4], [5, 6], [7]]
+console.log(chunkEvery([1], 2)); // [[1]]
 
 /*
 
