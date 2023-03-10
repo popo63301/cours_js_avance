@@ -19,7 +19,9 @@ Privilégier les fonctions map et reduce.
    `all([2,3,4], (e) => e % 2 === 0) -> false`
 
 2. withIndex = ajoute l'index au côté de chaque élément
+
    `withIndex(["a", "b", "c"]) -> [[0, "a"], [1, "b"], [2, "c"]]`
 
 3. chunkEvery (avec un reduce seulement) = découpe la liste en liste de sous-liste avec la même longueur qu'on a passé en argument
+
    `chunkEvery([1, 2, 3, 4, 5, 6], 2) -> [[1, 2], [3, 4], [5, 6]]`
